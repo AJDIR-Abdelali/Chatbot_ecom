@@ -1,0 +1,10 @@
+export type Env = {
+  SUPABASE_URL: string;
+  SUPABASE_SERVICE_ROLE_KEY: string;
+  TELEGRAM_BOT_TOKEN?: string;
+  TELEGRAM_WEBHOOK_SECRET?: string;
+  INSTAGRAM_VERIFY_TOKEN?: string;
+  INSTAGRAM_APP_SECRET?: string;
+  WHATSAPP_VERIFY_TOKEN?: string;
+  WHATSAPP_APP_SECRET?: string;
+};

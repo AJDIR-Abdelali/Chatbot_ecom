@@ -1,0 +1,22 @@
+{
+  "name": "@chatbot/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "build": "wrangler deploy src/index.ts --dry-run",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@chatbot/shared": "0.1.0",
+    "@hono/zod-validator": "^0.4.1",
+    "@supabase/supabase-js": "^2.45.5",
+    "hono": "^4.6.8",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241022.0",
+    "wrangler": "^3.83.0"
+  }
+}
